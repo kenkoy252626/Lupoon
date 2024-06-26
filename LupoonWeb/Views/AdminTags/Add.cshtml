@@ -1,0 +1,35 @@
+﻿@model LupoonWeb.Models.ViewModels.AddTagRequest// find the model for add tag request
+@{
+}
+<!--This will show the Add tags-->
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h1>Add New Tag - Admin Fnctionality</h1>
+    </div>
+</div>
+
+<div class="container py-5">
+    <form method="post">
+        <div class mb3>
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" asp-for="Name"><!--This asp for locate to addtag request to save to database-->
+
+        </div>
+   
+        <div class mb3>
+            <label class="form-label">Displayname</label>
+            <input type="text" class="form-control" id="displayname" asp-for="DisplayName">
+
+
+        </div>
+
+
+
+        <div class="mb-3">
+            </br>
+            <button type="submit" class="btn btn-success" >Submit</button>
+
+        </div>
+    </form>
+
+</div>
